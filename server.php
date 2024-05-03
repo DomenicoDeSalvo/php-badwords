@@ -1,9 +1,11 @@
 <!-- PHP -->
 <?php
-
+    //Messaggio inserito dall'utente.
     $message = $_GET['message'];
+    //Parola che l'utente sceglie di censurare.
     $word = $_GET['censored'];
 
+    //La parola scelta dall'utente viene censurata e sostituita dagli asterischi. Viene tenuto il conto delle parole censurate.
     $new_message = str_replace($word,'***', $message, $count);
 
 ?>
