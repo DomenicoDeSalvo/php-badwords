@@ -2,6 +2,9 @@
 <?php
 
     $message = $_GET['message'];
+    $word = $_GET['censored'];
+
+    $new_message = str_replace($word,'***', $message);
 
 ?>
 
@@ -15,8 +18,26 @@
     </head>
     <body>
         <main>
-            <h2>Il tuo messaggio:</h2>
-            <p><?php echo $message; ?></p>
+            <div>
+                <h4>Messaggio originale:</h4>
+                <p><?php echo $message; ?></p>
+            </div>
+
+            <div>
+                <h4>Lunghezza messaggio originale:</h4>
+                <p><?php echo strlen(trim($message)); ?></p>
+            </div>
+
+            <div>
+                <h4>Messaggio censurato:</h4>
+                <p><?php echo $new_message; ?></p>
+            </div>
+
+            <div>
+                <h4>Lunghezza messaggio censurato:</h4>
+                <p><?php echo strlen(trim($new_message)); ?></p>
+            </div>
+            
         </main>
     </body>
 </html>

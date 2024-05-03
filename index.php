@@ -16,6 +16,11 @@
                     <textarea name="message" id="message" placeholder="Inserire un messaggio"></textarea>
                 </div>
 
+                <div>
+                    <label for="censored">Parola da censurare</label>
+                    <input type='text'  name="censored" id="censored" placeholder="Parola da censurare"></textarea>
+                </div>
+                
                 <button>Invia</button>
             </form>
         </main>
