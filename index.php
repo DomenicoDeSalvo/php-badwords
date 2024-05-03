@@ -12,11 +12,13 @@
                 <form action="./server.php">
                     <div>
                         <label for="message">Messaggio:</label>
+                        <br>
                         <textarea name="message" id="message" rows="1" cols="50" placeholder="Inserire un messaggio"></textarea>
                     </div>
                     
                     <div>
                         <label for="censored">Parola da censurare:</label>
+                        <br>
                         <input type='text'  name="censored" id="censored" placeholder="Parola da censurare"></textarea>
                     </div>        
                     <button>Invia</button>
@@ -32,6 +34,10 @@
     .container{
         max-width: 95%;
         margin: 0 auto;
+    }
+
+    .container *{
+        text-align: center;
     }
 
     div, button{

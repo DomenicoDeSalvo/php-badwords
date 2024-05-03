@@ -57,4 +57,8 @@
         max-width: 95%;
         margin: 0 auto;
     }
+
+    .container *{
+        text-align: center;
+    }
 </style>
