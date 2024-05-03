@@ -20,31 +20,41 @@
     </head>
     <body>
         <main>
-            <div>
-                <h4>Messaggio originale:</h4>
-                <p><?php echo $message; ?></p>
+            <div class="container">   
+                <div>
+                    <h4>Messaggio originale:</h4>
+                    <p><?php echo $message; ?></p>
+                </div>
+                
+                <div>
+                    <h4>Lunghezza messaggio originale:</h4>
+                    <p><?php echo strlen(trim($message)); ?></p>
+                </div>
+                
+                <div>
+                    <h4>Messaggio censurato:</h4>
+                    <p><?php echo $new_message; ?></p>
+                </div>
+                
+                <div>
+                    <h4>Lunghezza messaggio censurato:</h4>
+                    <p><?php echo strlen(trim($new_message)); ?></p>
+                </div>
+                
+                <div>
+                    <h4>Numero parole censurate</h4>
+                    <p><?php echo $count;?></p>
+                </div>
             </div>
-
-            <div>
-                <h4>Lunghezza messaggio originale:</h4>
-                <p><?php echo strlen(trim($message)); ?></p>
-            </div>
-
-            <div>
-                <h4>Messaggio censurato:</h4>
-                <p><?php echo $new_message; ?></p>
-            </div>
-
-            <div>
-                <h4>Lunghezza messaggio censurato:</h4>
-                <p><?php echo strlen(trim($new_message)); ?></p>
-            </div>
-
-            <div>
-                <h4>Numero parole censurate</h4>
-                <p><?php echo $count;?></p>
-            </div>
-            
         </main>
     </body>
 </html>
+
+<!-- STYLE -->
+
+<style>
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+</style>

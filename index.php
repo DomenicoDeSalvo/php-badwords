@@ -8,19 +8,37 @@
     </head>
     <body>
         <main>
-            <form action="./server.php">
-                <div>
-                    <label for="message">Messaggio</label>
-                    <textarea name="message" id="message" placeholder="Inserire un messaggio"></textarea>
-                </div>
-
-                <div>
-                    <label for="censored">Parola da censurare</label>
-                    <input type='text'  name="censored" id="censored" placeholder="Parola da censurare"></textarea>
-                </div>
-                
-                <button>Invia</button>
-            </form>
+            <div class="container"> 
+                <form action="./server.php">
+                    <div>
+                        <label for="message">Messaggio:</label>
+                        <textarea name="message" id="message" rows="1" cols="50" placeholder="Inserire un messaggio"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="censored">Parola da censurare:</label>
+                        <input type='text'  name="censored" id="censored" placeholder="Parola da censurare"></textarea>
+                    </div>        
+                    <button>Invia</button>
+                </form>
+            </div>
         </main>
     </body>
 </html>
+
+<!-- STYLE -->
+
+<style>
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    div, button{
+        margin: 12px 0;
+    }
+
+    label{
+        font-weight: 700;
+    }
+</style>
